@@ -6,12 +6,12 @@ body{
 	height:100%;
 }
 
-#instructions>a, #instructions>a:visited{
+a, a:visited{
 	color:#fff;
 	text-decoration:none;
 }
 
-#instructions>a:hover{
+a:hover{
 	color:#ccc;
 	text-decoration:underline;
 }
