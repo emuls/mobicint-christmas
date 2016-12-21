@@ -6,7 +6,7 @@ body{
 	height:100%;
 }
 
-#instructions>a{
+#instructions>a, #instructions>a:visited{
 	color:#fff;
 	text-decoration:none;
 }
