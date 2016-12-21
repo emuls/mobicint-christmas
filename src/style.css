@@ -31,4 +31,5 @@ body{
 	position:absolute;
 	top:5px;
 	right:20px;
+	z-index:1001;
 }
