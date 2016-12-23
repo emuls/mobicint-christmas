@@ -1,58 +1,62 @@
 <html>
 <head>
 	<title>Mobi¢int ¢hristmas</title>
-	<link rel="stylesheet" type="text/css" href="app/style.css">
-	<script type="text/javascript" src="app/countdown.js"></script>
-	<script type="text/javascript" src="app/christmascountdown.js"></script>
+	<link rel="stylesheet" type="text/css" href="src/style.css">
+	<script type="text/javascript" src="src/countdown.js"></script>
+	<script type="text/javascript" src="src/christmascountdown.js"></script>
+	<script type="text/javascript" src="src/sound.js"></script>
 </head>
 <body>
-<div id="christmas-lights">
-	<ul class="strand">
-		<li></li>
-		<li></li>
-		<li></li>
-		<li></li>
-		<li></li>
-		<li></li>
-		<li></li>
-		<li></li>
-		<li></li>
-		<li></li>
-		<li></li>
-		<li></li>
-		<li></li>
-		<li></li>
-		<li></li>
-		<li></li>
-		<li></li>
-		<li></li>
-		<li></li>
-		<li></li>
-		<li></li>
-		<li></li>
-		<li></li>
-		<li></li>
-		<li></li>
-		<li></li>
-		<li></li>
-		<li></li>
-		<li></li>
-		<li></li>
-		<li></li>
-		<li></li>
-		<li></li>
-		<li></li>
-	</ul>
-</div>
-<div id="countdowncontainer"></div>
-<div id="instructions"><a href="app/instructions.html">Instructions</a></div>
-<div id="logo">
-	<img src="app/resources/images/logo.png">
-</div>
+	<div id="christmas-lights">
+		<ul class="strand">
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</div>
+	<div id="countdowncontainer"></div>
+	<div id="instructions"><a href="src/instructions.html">Instructions</a></div>
+	<div id="logo">
+		<img src="src/images/logo.png">
+	</div>
 
-<audio src="app/resources/audio/jingle_bells.ogg" autoplay="autoplay" loop="loop"></audio>
 <div class="tree">
 	<img src="app/resources/images/tree.png">
 </div>
+	<audio src="src/sound/airhorn.wav" preload id="airhorn"></audio>
+	<audio src="src/sound/party_horn.wav" preload id="partyhorn"></audio>
+	<audio src="src/sound/sleigh_bell.wav" preload id="bell"></audio>
+	<audio src="app/resources/audio/jingle_bells.ogg" autoplay="autoplay" loop="loop"></audio>
 </body>
 </html>
