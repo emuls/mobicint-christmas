@@ -38,3 +38,21 @@ a:hover{
 	right:20px;
 	z-index:1001;
 }
+
+.lcdstyle{
+	background-color:#4099ab;
+	color:white;
+	font: bold 18px MS Sans Serif;
+	padding: 3px;
+}
+
+.lcdstyle sup{
+	font-size: 80%
+}
+
+#countdowncontainer{
+	position: fixed;
+	left: 0;
+	top: 0;
+	color: forestgreen;
+}
