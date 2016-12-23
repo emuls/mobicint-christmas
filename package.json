@@ -1,0 +1,19 @@
+{
+  "name": "mobicint-christmas",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+		"start": "http-server -p 8090 -o"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@git.flexcutech.com:FT4/mobicint-christmas.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "http-server": "^0.9.0"
+  }
+}
