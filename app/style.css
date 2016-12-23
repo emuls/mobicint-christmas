@@ -171,4 +171,17 @@ a:hover {
         background: rgba(240, 35, 65, .4);
         box-shadow: 0px 4.66667px 24px 3px rgba(240, 35, 65, .2);
     }
+
+}
+
+.tree{
+	position: absolute;
+	top:55%;
+}
+
+#logo:hover{
+	background-image: url('resources/images/sfw_db.png');
+	background-repeat: no-repeat;
+	background-size: 2%;
+	background-position: 55% 41%;
 }
