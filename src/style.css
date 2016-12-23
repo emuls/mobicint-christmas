@@ -34,7 +34,7 @@ a:hover {
 
 #instructions {
     position: absolute;
-    top: 60px;
+    bottom: 40px;
     right: 20px;
     z-index: 1001;
 }
@@ -51,9 +51,9 @@ a:hover {
 }
 
 #countdowncontainer {
-    position: fixed;
+    position: absolute;
     left: 0;
-    top: 60px;
+    bottom: 40px;
     color: forestgreen;
 }
 
