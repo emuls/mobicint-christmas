@@ -179,11 +179,11 @@ a:hover {
 	top:55%;
 }
 
-#logo:hover{
+#logo>img:hover{
 	background-image: url('images/sfw_db.png');
 	background-repeat: no-repeat;
-	background-size: 2%;
-	background-position: 55% 41%;
+	background-size: 10%;
+	background-position: 80% 20%;
 }
 #snowflakeContainer {
 	position: absolute;
