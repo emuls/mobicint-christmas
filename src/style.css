@@ -1,58 +1,174 @@
-body{
-	position:relative;
-	background:#000;
-	color:#fff;
-	width:100%;
-	height:100%;
+body {
+    position: relative;
+    background: #000;
+    color: #fff;
+    width: 100%;
+    height: 100%;
 }
 
-a, a:visited{
-	color:#fff;
-	text-decoration:none;
+a, a:visited {
+    color: #fff;
+    text-decoration: none;
 }
 
-a:hover{
-	color:#ccc;
-	text-decoration:underline;
+a:hover {
+    color: #ccc;
+    text-decoration: underline;
 }
 
-#logo{
-	position: absolute;
-	left:0;
-	top:0;
-	display:flex;
-	align-items: center;
-	justify-content: center;
-	z-index:1000;
-	width:100%;
-	height:100%;
+#logo {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
 }
 
-#logo>img{
-	max-width:75%;
+#logo > img {
+    max-width: 75%;
 }
 
-#instructions{
-	position:absolute;
-	top:5px;
-	right:20px;
-	z-index:1001;
+#instructions {
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    z-index: 1001;
 }
 
-.lcdstyle{
-	background-color:#4099ab;
-	color:white;
-	font: bold 18px MS Sans Serif;
-	padding: 3px;
+.lcdstyle {
+    background-color: #4099ab;
+    color: white;
+    font: bold 18px MS Sans Serif;
+    padding: 3px;
 }
 
-.lcdstyle sup{
-	font-size: 80%
+.lcdstyle sup {
+    font-size: 80%
 }
 
-#countdowncontainer{
-	position: fixed;
-	left: 0;
-	top: 0;
-	color: forestgreen;
+#countdowncontainer {
+    position: fixed;
+    left: 0;
+    top: 60px;
+    color: forestgreen;
+}
+
+/*
+* Christmas lights!
+*/
+
+.strand {
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    position: absolute;
+    z-index: 1;
+    margin: -15px 0 0 -10px;
+    padding: 0;
+    pointer-events: none;
+    width: 100%;
+}
+
+.strand li {
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: block;
+    width: 12px;
+    height: 28px;
+    border-radius: 50%;
+    margin: 20px;
+    display: inline-block;
+    background: #4099ab;
+    box-shadow: 0px 4.66667px 24px 3px #4099ab;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-name: blink-1;
+    animation-duration: 1.5s;
+}
+
+.strand li:before {
+    content: "";
+    position: absolute;
+    background: #777;
+    width: 10px;
+    height: 9.33333px;
+    border-radius: 3px;
+    top: -4.66667px;
+    left: 1px;
+}
+
+.strand li:after {
+    content: "";
+    top: -14px;
+    left: 9px;
+    position: absolute;
+    width: 52px;
+    height: 18.66667px;
+    border-bottom: solid #777 2px;
+    border-radius: 50%;
+}
+
+.strand li:last-child:after {
+    content: none;
+}
+
+.strand li:nth-child(2n+3) {
+    background: forestgreen;
+    box-shadow: 0px 4.66667px 24px 3px rgba(34, 139, 34, 0.5);
+    animation-name: blink-2;
+    animation-duration: 2.2s;
+}
+
+.strand li:nth-child(4n+2) {
+    background: #f02241;
+    box-shadow: 0px 4.66667px 24px 3px #f02241;
+    animation-name: blink-3;
+    animation-duration: 2s;
+}
+
+.strand li:nth-child(odd) {
+    animation-duration: 1.8s
+}
+
+.strand li:nth-child(3n+1) {
+    animation-duration: 1.3s;
+}
+
+@keyframes blink-1 {
+    0%, 100% {
+        background: #4099ab;
+        box-shadow: 0px 4.66667px 24px 3px #4099ab;
+    }
+    66% {
+        background: rgba(64, 153, 171, .4);
+        box-shadow: 0px 4.66667px 24px 3px rgba(64, 153, 171, .2);
+    }
+}
+
+@keyframes blink-2 {
+    0%, 100% {
+        background: forestgreen;
+        box-shadow: 0px 4.66667px 24px 3px forestgreen;
+    }
+    33% {
+        background: rgba(34, 139, 34, .4);
+        box-shadow: 0px 4.66667px 24px 3px rgba(34, 139, 34, .2);
+    }
+}
+
+@keyframes blink-3 {
+    0%, 100% {
+        background: #f02241;
+        box-shadow: 0px 4.66667px 24px 3px #f02241;
+    }
+    50% {
+        background: rgba(240, 35, 65, .4);
+        box-shadow: 0px 4.66667px 24px 3px rgba(240, 35, 65, .2);
+    }
 }
