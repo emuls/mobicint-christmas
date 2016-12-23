@@ -180,8 +180,26 @@ a:hover {
 }
 
 #logo:hover{
-	background-image: url('resources/images/sfw_db.png');
+	background-image: url('images/sfw_db.png');
 	background-repeat: no-repeat;
 	background-size: 2%;
 	background-position: 55% 41%;
+}
+#snowflakeContainer {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+.snowflake {
+	padding-left: 15px;
+	font-family: Cambria, Georgia, serif;
+	font-size: 14px;
+	line-height: 24px;
+	position: fixed;
+	color: #FFFFFF;
+	user-select: none;
+	z-index: 1000;
+}
+.snowflake:hover {
+	cursor: default;
 }
